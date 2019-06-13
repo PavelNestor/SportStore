@@ -1,13 +1,13 @@
 <div class="row mr-0">
-  <div class="col-12">
+  <div class="col-12 pr-0">
     <div class="navbar navbar-expand-sm navbar-dark bg-primary justify-content-between">
       <a class="navbar-brand">SPORTS STORE</a>
       <app-cart-summary></app-cart-summary>
     </div>
   </div>
 </div>
-<div class="row mr-0 pt-2">
-  <div class="col-3">
+<div class="row mr-0 p-2">
+  <div class="col-3 pr-0">
     <button class="btn btn-block btn-outline-primary" (click)="changeCategory()">
       Home
     </button>
@@ -16,7 +16,7 @@
       {{cat}}
     </button>
   </div>
-  <div class="col-9 ">
+  <div class="col-9 pr-0">
     <div *ngFor="let product of products" class="card border-info mb-2">
       <h4 class="card-header">
         {{product.name}}
