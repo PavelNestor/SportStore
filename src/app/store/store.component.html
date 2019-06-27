@@ -15,6 +15,9 @@
       [class.active]="cat == selectedCategory" (click)="changeCategory(cat)">
       {{cat}}
     </button>
+    <button class="btn btn-block btn-danger mt-3" routerLink="/admin/auth">
+      Admin
+    </button>
   </div>
   <div class="col-9 pr-0">
     <div *ngFor="let product of products" class="card border-info mb-2">
